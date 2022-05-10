@@ -20,3 +20,13 @@ closeBtn.addEventListener("click", function () {
 });
 // set year
 date.innerHTML = new Date().getFullYear();
+
+
+//dropdown cv button
+
+let click = document.querySelector('.download_cv_btn');
+let list = document.querySelector('.cv_list');
+
+click.addEventListener('click', () => {
+  list.classList.toggle("newlist")
+})

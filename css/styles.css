@@ -130,7 +130,8 @@ p {
     line-height: 1;
   }
 }
-/*  global classes */
+
+/* global classes */
 
 .btn {
   text-transform: uppercase;
@@ -254,6 +255,7 @@ Navbar
      align-items: center;
    }
 }
+
 /* fixed navbar */
 .navbar-fixed{
   position: fixed;
@@ -263,6 +265,42 @@ Navbar
   background: var(--clr-white);
   z-index: 2;
   box-shadow: var(--light-shadow);
+}
+
+.container_download_cv{
+  position: relative;
+}
+
+.span_resume{
+  color: #fff;
+  background-color: #000;
+  padding: 10px 15px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  width: 20px;
+  transition: .5s;
+  cursor: pointer;
+}
+.span_resume:hover{
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.cv_list{
+  position: absolute;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 10px 15px;
+}
+
+.newlist{
+  transform: scaleY(1);
 }
 
 
@@ -536,6 +574,8 @@ Services
 Projects
 ===============
 */
+
+
 .projects-text{
   width: 85vw;
   max-width: 30rem;
@@ -569,8 +609,10 @@ Projects
   opacity: 1;
 }
 .project-img{
+  width: 100px;
   height: 15rem;
   object-fit: cover;
+  background-position: center;
 }
 .project:hover .project-img{
   opacity: 0.1;
