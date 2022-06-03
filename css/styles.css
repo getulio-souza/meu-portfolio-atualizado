@@ -198,6 +198,7 @@ Navbar
   display: grid;
   align-items: center;
   transition: var(--transition);
+  margin-bottom: 20px;
 }
 .nav-center{
   width: 100%;
